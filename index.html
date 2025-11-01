@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استبيان الكافيتيريا</title>
+  <style>
+    body {
+<form action="success.html">
+      font-family: "Tahoma", sans-serif;
+      background-color: #fff3e0;
+      text-align: center;
+      margin: 50px;
+    }
+    h2 {
+      color: #e67e22;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #333;
+    }
+    input, select, button {
+      margin-top: 5px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 300px;
+    }
+    button {
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d35400;
+    }
+  </style>
+</head>
+<body>
+  <h2>📋 استبيان عن خدمات الكافيتيريا في نظر الطالبات</h2>
+  <p>نرجو منك المشاركة معنا في تحسين الخدمة ❤️</p>
+
+  <form name="cafeteria-survey" method="POST" data-netlify="true" action="success.html">
+    <input type="hidden" name="form-name" value="cafeteria-survey">
+
+    <label>اكتبي اسمك (اختياري):</label>
+    <input type="text" name="name" placeholder="اسمك هنا">
+
+    <label>كم تقييمك لخدمة الكافيتيريا بشكل عام؟</label>
+    <input type="number" name="rating" min="1" max="5" placeholder="من 1 إلى 5">
+
+    <label>كيف ترين جودة الأكل والنظافة؟</label>
+    <select name="satisfaction">
+      <option value="" disabled selected>اختاري</option>
+      <option value="راضية جداً">راضية جداً</option>
+      <option value="راضية">راضية</option>
+      <option value="غير راضية">غير راضية</option>
+      <option value="سيئة جداً">سيئة جداً</option>
+    </select>
+
+    <label>هل لديك اقتراحات لتحسين الخدمة؟</label>
+    <input type="text" name="suggestions" placeholder="اكتبي اقتراحك هنا">
+
+      
+  
+
+    <button type="submit">إرسال</button>
+  </form>
+</body>
+</html>
